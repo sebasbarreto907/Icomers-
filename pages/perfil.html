@@ -3,48 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfil de Usuario | Mapa de navegación</title>
+  <title>Beneficios | GameDistrict</title>
   <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-  <main class="site">
-    <header class="hero">
-      <p class="eyebrow">Sección separada</p>
-      <h1>Perfil de Usuario</h1>
-      <p class="lead">La cuenta del usuario también se divide en responsabilidades pequeñas y fáciles de mantener.</p>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">i</span>
+        <div>
+          <strong>GameDistrict</strong>
+          <span class="brand-tag">Beneficios del servicio</span>
+        </div>
+      </div>
+
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a>
+        <a href="productos.html">Catálogo</a>
+        <a href="carrito.html">Carrito <span class="cart-badge">0</span></a>
+        <a href="perfil.html">Beneficios</a>
+        <a href="soporte.html">Contacto</a>
+      </nav>
     </header>
 
-    <section class="page-shell">
-      <aside class="panel sidebar-panel">
-        <h2>Ruta</h2>
-        <ul class="tree">
-          <li>
-            <a class="node" href="../index.html">Inicio</a>
-            <ul>
-              <li><span class="node node-root">Perfil de Usuario</span></li>
-            </ul>
-          </li>
-        </ul>
-        <a class="back-link" href="../index.html">Volver al inicio</a>
-      </aside>
+    <main>
+      <section class="section-block">
+        <div class="section-head">
+          <h2>Beneficios de comprar con nosotros</h2>
+          <p>Te ofrecemos una experiencia de compra gamer segura, rápida y con acceso a contenido exclusivo.</p>
+        </div>
 
-      <section class="panel page-content" aria-label="Contenido del perfil">
-        <p class="breadcrumb">Inicio / Perfil de Usuario</p>
-        <h2>Área de cuenta</h2>
-        <p>Las opciones de historial y configuración se tratan como páginas separadas para no mezclar funciones.</p>
-
-        <div class="branch-grid">
-          <article class="card" id="mis-pedidos">
-            <h3>Mis pedidos</h3>
-            <p>Lista de compras realizadas, estados de envío y acceso al historial del usuario.</p>
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <h3>Entrega digital inmediata</h3>
+            <p>Recibe tus juegos de manera instantánea después de la compra sin esperas de envío.</p>
           </article>
-          <article class="card" id="configuracion">
-            <h3>Configuración</h3>
-            <p>Ajustes de perfil, contraseña, idioma y preferencias generales de la cuenta.</p>
+          <article class="benefit-card">
+            <h3>Soporte gamer especializado</h3>
+            <p>Asistencia personalizada para descargas, códigos y compatibilidad de plataformas.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Actualizaciones periódicas</h3>
+            <p>Ofertas, noticias y eventos nuevos cada semana directamente para los usuarios registrados.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Pagos seguros</h3>
+            <p>Protección completa en cada transacción con encriptación y métodos de pago confiables.</p>
           </article>
         </div>
       </section>
-    </section>
-  </main>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 GameDistrict. Beneficios diseñados para jugadores fieles.</p>
+      <div class="footer-links">
+        <a href="../index.html">Inicio</a>
+        <a href="productos.html">Catálogo</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="perfil.html">Beneficios</a>
+        <a href="soporte.html">Contacto</a>
+      </div>
+    </footer>
+  </div>
+  <script src="../scripts/cart.js"></script>
 </body>
 </html>

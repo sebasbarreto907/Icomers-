@@ -3,48 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrito | Mapa de navegación</title>
+  <title>Carrito | GameDistrict</title>
   <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-  <main class="site">
-    <header class="hero">
-      <p class="eyebrow">Sección separada</p>
-      <h1>Carrito</h1>
-      <p class="lead">Esta rama separa la revisión de artículos del cierre del proceso de compra.</p>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">i</span>
+        <div>
+          <strong>GameDistrict</strong>
+          <span class="brand-tag">Tu carrito de compra</span>
+        </div>
+      </div>
+
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a>
+        <a href="productos.html">Catálogo</a>
+        <a href="carrito.html">Carrito <span class="cart-badge">0</span></a>
+        <a href="perfil.html">Beneficios</a>
+        <a href="soporte.html">Contacto</a>
+      </nav>
     </header>
 
-    <section class="page-shell">
-      <aside class="panel sidebar-panel">
-        <h2>Ruta</h2>
-        <ul class="tree">
-          <li>
-            <a class="node" href="../index.html">Inicio</a>
-            <ul>
-              <li><span class="node node-root">Carrito</span></li>
-            </ul>
-          </li>
-        </ul>
-        <a class="back-link" href="../index.html">Volver al inicio</a>
-      </aside>
+    <main>
+      <section class="section-block">
+        <div class="section-head">
+          <h2>Tu carrito</h2>
+          <p>Revisa los juegos que has agregado, confirma tu compra o cancela si deseas reiniciar tu selección.</p>
+        </div>
 
-      <section class="panel page-content" aria-label="Contenido del carrito">
-        <p class="breadcrumb">Inicio / Carrito</p>
-        <h2>Proceso de compra</h2>
-        <p>Separar estas dos vistas permite explicar la navegación entre revisión de pedido y confirmación.</p>
+        <div id="cart-banner" class="message-banner hidden"></div>
 
-        <div class="branch-grid">
-          <articlhref="pages/productos.html"e class="card" id="resumen">
-            <h3>Resumen</h3>
-            <p>Reúne los productos seleccionados, cantidades y total estimado antes de pagar.</p>
-          </article>
-          <article class="card" id="checkout">
-            <h3>Checkout</h3>
-            <p>Contiene el formulario de envío, facturación y confirmación final de la compra.</p>
-          </article>
+        <div class="cart-summary">
+          <div>
+            <p>Artículos en carrito</p>
+            <strong id="cart-count">0</strong>
+          </div>
+          <div class="cart-meta">
+            <p>Total estimado</p>
+            <strong id="cart-total">$0.00</strong>
+          </div>
+        </div>
+
+        <div id="cart-list"></div>
+
+        <div class="cart-actions">
+          <button id="confirm-purchase" class="button button-primary" type="button">Confirmar compra</button>
+          <button id="cancel-purchase" class="button button-secondary" type="button">Cancelar compra</button>
         </div>
       </section>
-    </section>
-  </main>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 GameDistrict. Administra tu carrito y finaliza tu pedido.</p>
+      <div class="footer-links">
+        <a href="../index.html">Inicio</a>
+        <a href="productos.html">Catálogo</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="perfil.html">Beneficios</a>
+        <a href="soporte.html">Contacto</a>
+      </div>
+    </footer>
+  </div>
+
+  <div id="thank-you-modal" class="thank-you-modal hidden" role="dialog" aria-modal="true">
+    <div class="thank-you-card">
+      <span class="thank-you-icon">✓</span>
+      <h3>¡Gracias por tu compra!</h3>
+      <p>Tu pedido ha sido confirmado. Sigue navegando para descubrir más juegos.</p>
+    </div>
+  </div>
+
+  <script src="../scripts/cart.js"></script>
 </body>
 </html>

@@ -3,90 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio | Mapa de navegación</title>
+  <title>GameDistrict</title>
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <main class="site">
-    <header class="hero">
-      <p class="eyebrow">Navegación web en HTML puro</p>
-      <h1>Inicio</h1>
-      <p class="lead">
-        Este ejemplo separa el estilo en un archivo externo y divide el contenido por secciones
-        para mostrar una navegación clara y mantenible.
-      </p>
-    </header>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">i</span>
+        <div>
+          <strong>GameDistrict</strong>
+          <span class="brand-tag">Tu tienda de confianza</span>
+        </div>
+      </div>
 
-    <section class="layout" aria-label="Estructura del sitio">
-      <nav class="panel tree-panel" aria-label="Árbol de navegación">
-        <h2>Mapa de páginas</h2>
-        <ul class="tree">
-          <li>
-            <span class="node node-root">Inicio</span>
-            <ul>
-              <li>
-                <a class="node" href="pages/productos.html">Productos</a>
-                <ul>
-                  <li><a class="node" href="pages/productos.html#categorias">Categorías</a></li>
-                  <li><a class="node" href="pages/productos.html#detalle-producto">Detalle de Producto</a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="node" href="pages/carrito.html">Carrito</a>
-                <ul>
-                  <li><a class="node" href="pages/carrito.html#resumen">Resumen</a></li>
-                  <li><a class="node" href="pages/carrito.html#checkout">Checkout</a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="node" href="pages/perfil.html">Perfil de Usuario</a>
-                <ul>
-                  <li><a class="node" href="pages/perfil.html#mis-pedidos">Mis pedidos</a></li>
-                  <li><a class="node" href="pages/perfil.html#configuracion">Configuración</a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="node" href="pages/soporte.html">Soporte</a>
-                <ul>
-                  <li><a class="node" href="pages/soporte.html#faq">FAQ</a></li>
-                  <li><a class="node" href="pages/soporte.html#contacto">Contacto</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="pages/productos.html">Catálogo</a>
+        <a href="pages/carrito.html">Carrito <span class="cart-badge">0</span></a>
+        <a href="pages/perfil.html">Beneficios</a>
+        <a href="pages/soporte.html">Contacto</a>
       </nav>
 
-      <section class="panel content-panel" aria-label="Resumen de secciones">
+      <a class="button button-primary" href="pages/productos.html">Ir al catálogo</a>
+    </header>
+
+    <main>
+      <section class="section-block">
         <div class="section-head">
-          <h2>Secciones principales</h2>
-          <p>Desde aquí se accede a cada rama del árbol de navegación.</p>
+          <h2>Bienvenido a GameDistrict</h2>
+          <p>Explora cada módulo del sitio en páginas separadas, con navegación clara y estilo gamer uniforme.</p>
         </div>
 
-        <div class="summary-grid">
-          <a class="tile" href="pages/productos.html">
-            <h3>Productos</h3>
-            <p>Categorías y detalle de producto.</p>
-          </a>
-          <a class="tile" href="pages/carrito.html">
-            <h3>Carrito</h3>
-            <p>Resumen y checkout.</p>
-          </a>
-          <a class="tile" href="pages/perfil.html">
-            <h3>Perfil de Usuario</h3>
-            <p>Mis pedidos y configuración.</p>
-          </a>
-          <a class="tile" href="pages/soporte.html">
-            <h3>Soporte</h3>
-            <p>FAQ y contacto.</p>
-          </a>
-        </div>
-
-        <div class="note">
-          La estructura conserva la jerarquía pedida, pero cada bloque funcional vive en su propio archivo HTML.
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <h3><a href="pages/productos.html">Catálogo</a></h3>
+            <p>Encuentra títulos destacados, géneros y recomendaciones con diseño enfocado en juegos.</p>
+          </article>
+          <article class="benefit-card">
+            <h3><a href="pages/carrito.html">Ofertas</a></h3>
+            <p>Accede a descuentos, packs especiales y propuestas de valor para tu colección.</p>
+          </article>
+          <article class="benefit-card">
+            <h3><a href="pages/perfil.html">Beneficios</a></h3>
+            <p>Descubre las ventajas de comprar con nosotros, soporte especializado y actualizaciones.</p>
+          </article>
+          <article class="benefit-card">
+            <h3><a href="pages/soporte.html">Contacto</a></h3>
+            <p>Obtén ayuda rápida, respuestas y soporte técnico con un formulario directo.</p>
+          </article>
         </div>
       </section>
-    </section>
-  </main>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 GameDistrict. Tu tienda de confianza.</p>
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="pages/productos.html">Catálogo</a>
+        <a href="pages/carrito.html">Carrito</a>
+        <a href="pages/perfil.html">Beneficios</a>
+        <a href="pages/soporte.html">Contacto</a>
+      </div>
+    </footer>
+  </div>
+  <script src="scripts/cart.js"></script>
 </body>
 </html>

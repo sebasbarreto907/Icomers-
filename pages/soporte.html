@@ -3,48 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soporte | Mapa de navegación</title>
+  <title>Contacto | GameDistrict</title>
   <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-  <main class="site">
-    <header class="hero">
-      <p class="eyebrow">Sección separada</p>
-      <h1>Soporte</h1>
-      <p class="lead">La ayuda se separa en preguntas frecuentes y un canal directo de contacto.</p>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">i</span>
+        <div>
+          <strong>GameDistrict</strong>
+          <span class="brand-tag">Soporte y ayuda</span>
+        </div>
+      </div>
+
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a>
+        <a href="productos.html">Catálogo</a>
+        <a href="carrito.html">Carrito <span class="cart-badge">0</span></a>
+        <a href="perfil.html">Beneficios</a>
+        <a href="soporte.html">Contacto</a>
+      </nav>
     </header>
 
-    <section class="page-shell">
-      <aside class="panel sidebar-panel">
-        <h2>Ruta</h2>
-        <ul class="tree">
-          <li>
-            <a class="node" href="../index.html">Inicio</a>
-            <ul>
-              <li><span class="node node-root">Soporte</span></li>
-            </ul>
-          </li>
-        </ul>
-        <a class="back-link" href="../index.html">Volver al inicio</a>
-      </aside>
+    <main>
+      <section class="section-block">
+        <div class="section-head">
+          <h2>Soporte disponible</h2>
+          <p>Encuentra respuestas rápidas o envía una consulta directamente a nuestro equipo.</p>
+        </div>
 
-      <section class="panel page-content" aria-label="Contenido de soporte">
-        <p class="breadcrumb">Inicio / Soporte</p>
-        <h2>Ayuda y contacto</h2>
-        <p>Esta división evita mezclar respuestas generales con solicitudes que requieren atención directa.</p>
-
-        <div class="branch-grid">
-          <article class="card" id="faq">
+        <div class="benefit-grid">
+          <article class="benefit-card">
             <h3>FAQ</h3>
-            <p>Resuelve dudas comunes sin necesidad de intervención directa del equipo de soporte.</p>
+            <p>Resuelve dudas frecuentes sobre envíos digitales, pagos y descargas.</p>
           </article>
-          <article class="card" id="contacto">
-            <h3>Contacto</h3>
-            <p>Canal para consultas específicas, incidencias o solicitudes que requieren seguimiento.</p>
+          <article class="benefit-card">
+            <h3>Correo electrónico</h3>
+            <p>Escríbenos a soporte@gamedistrict.com para preguntas personalizadas.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Atención rápida</h3>
+            <p>Respuestas en menos de 24 horas para consultas técnicas o de pedidos.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Guías de uso</h3>
+            <p>Accede a tutoriales de instalación y activación de cada título.</p>
           </article>
         </div>
+
+        <section class="contact-block">
+          <div class="section-head">
+            <h2>Envía tu mensaje</h2>
+            <p>Rellena el formulario y nos comunicaremos contigo en breve.</p>
+          </div>
+
+          <form class="newsletter-form" action="#" method="post">
+            <label for="support-email">Correo electrónico</label>
+            <input id="support-email" type="email" name="email" placeholder="tucorreo@gamer.com" required>
+
+            <label for="support-message">Mensaje</label>
+            <textarea id="support-message" name="message" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+
+            <button class="button button-primary" type="submit">Enviar consulta</button>
+          </form>
+        </section>
       </section>
-    </section>
-  </main>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 GameDistrict. Apoyo gamer con respuestas claras y rápidas.</p>
+      <div class="footer-links">
+        <a href="../index.html">Inicio</a>
+        <a href="productos.html">Catálogo</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="perfil.html">Beneficios</a>
+        <a href="soporte.html">Contacto</a>
+      </div>
+    </footer>
+  </div>
+  <script src="../scripts/cart.js"></script>
 </body>
 </html>
